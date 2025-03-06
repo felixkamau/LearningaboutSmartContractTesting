@@ -27,9 +27,11 @@ jobs:
       - name: Compile contracts
         run: npx hardhat compile
 
-      - name: Run Solidity linter (solhint)
-        run: npx solhint 'contracts/**/*.sol'
-
+    #   - name: Run Solidity linter (solhint)
+    #     run: npx solhint 'contracts/**/*.sol'
+      - name: Run Solidity linter (hardhat-solhint)
+        run: npx hardhat check
+      
       - name: Run ESLint
         run: npx eslint .
 
