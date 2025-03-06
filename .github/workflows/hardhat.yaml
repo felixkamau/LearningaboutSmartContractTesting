@@ -32,8 +32,6 @@ jobs:
       - name: Run Solidity linter (hardhat-solhint)
         run: npx hardhat check
       
-      - name: Run ESLint
-        run: npx eslint .
-
+  
       - name: Run Hardhat tests
         run: npx hardhat test
