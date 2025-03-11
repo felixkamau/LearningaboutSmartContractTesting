@@ -10,7 +10,6 @@ describe("dVoting", function () {
         //Contracts are deployed using the first signer/acc by default
         const [owner, otherAccount] = await hre.ethers.getSigners();
         const Voting = await hre.ethers.getContractFactory("Voting");
-
         const voting = await Voting.deploy();
         return { voting, owner, otherAccount};
     }
