@@ -26,7 +26,8 @@ const getProvider = (): ethers.providers.Web3Provider => {
 // Get signer
 const getSigner = async (): Promise<ethers.providers.JsonRpcSigner> => {
     const provider = getProvider();
-    await provider.send('eth-requestAccounts',[]);
+    // await provider.send('eth-requestAccounts',[]);
+    await provider.send('eth_requestAccounts',[]);
 
     return provider.getSigner();
 }

@@ -1,6 +1,6 @@
-import { ContractAddr, ContractAbi } from "./contract";
+import { ContractAddr, ContractAbi, VotingAbi } from "./contract.const";
 
 
 
 
-export { ContractAbi, ContractAddr}
+export { ContractAbi, ContractAddr, VotingAbi}
